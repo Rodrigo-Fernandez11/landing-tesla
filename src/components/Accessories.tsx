@@ -6,7 +6,7 @@ import { FooterMenu } from "./FooterMenu";
 export const Accessories = () => {
   return (
     <LandingSection
-      color="whith"
+      color="white"
       textColor="black"
       title="Accesories"
       subtitle="Accesorios de Tesla"
