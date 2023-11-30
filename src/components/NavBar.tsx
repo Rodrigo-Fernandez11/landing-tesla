@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return (
-    <nav className="py-3 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 bg-white shadow-md">
+    <nav className="py-3 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 bg-white/5 backdrop-blur-sm">
       <div className="flex-shrink-0">
         {/* Logo o ícono de navegación */}
         <svg
@@ -17,6 +17,7 @@ export const NavBar = () => {
       <div className="hidden md:flex">
         {/* Menú para tamaños de pantalla medianos y grandes */}
         <ul className="flex space-x-4 text-sm">
+          <li><a href="#modely">Modelo Y</a></li>
           <li><a href="#models">Modelo S</a></li>
           <li><a href="#model3">Modelo 3</a></li>
           <li><a href="#modelx">Modelo X</a></li>

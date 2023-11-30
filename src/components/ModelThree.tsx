@@ -2,7 +2,7 @@ import Image from "next/image";
 import model3 from "../../public/model-3.webp";
 import { LandingSection } from "./LandingSection";
 
-export const ModelThree: React.FC = () => {
+export const ModelThree = () => {
   return (
     <LandingSection
       color="black"

@@ -1,16 +1,16 @@
 import { HeroSection } from "@/components/HeroSection";
-import { LandingHeader } from "@/components/LandingHeader";
 import { ModelY } from "@/components/ModelY";
 import { ModelThree } from "@/components/ModelThree";
 import { ModelS } from "@/components/ModelS";
 import { ModelX } from "@/components/ModelX";
 import { PowerWall } from "@/components/PowerWall";
 import { Accessories } from "@/components/Accessories";
+import { NavBar } from "@/components/NavBar";
 
 export default function Home() {
   return (
     <>
-      <LandingHeader />
+      <NavBar/>
 
       <main className="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth">
         <div className="snap-center">

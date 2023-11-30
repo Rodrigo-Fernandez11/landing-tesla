@@ -15,19 +15,18 @@ export const LandingSection: React.FC<SectionProps> = ({
   title,
   subtitle,
   id,
-  children
+  children,
 }) => {
   return (
-    <section id={id} className={`h-screen w-screen text-center relative overflow-hidden`}>
+    <section
+      id={id}
+      className={`h-screen w-screen text-center relative overflow-hidden`}
+    >
       <div className="z-30 relative h-full flex flex-col">
         <header className="pt-20">
           {/* Cambiamos pt-40 a pt-30 para reducir el espacio superior */}
-          <h2 className={`text-${textColor} text-3xl font-bold`}>
-            {title}
-          </h2>
-          <p className={`${textColor} text-sm`}>
-            {subtitle}
-          </p>
+          <h2 className={`text-${textColor} text-3xl font-bold`}>{title}</h2>
+          <p className={`${textColor} text-sm`}>{subtitle}</p>
         </header>
         <footer className="flex flex-col flex-grow justify-end pb-20">
           {/* Utilizamos la clase "space-y-4" en el contenedor para separar los botones */}
