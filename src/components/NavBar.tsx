@@ -1,6 +1,6 @@
 export const NavBar = () => {
   return (
-    <nav className="py-3 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 bg-white/5 backdrop-blur-sm">
+    <nav className="py-3 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 text-gray-500 font-bold ">
       <div className="flex-shrink-0">
         {/* Logo o ícono de navegación */}
         <svg
