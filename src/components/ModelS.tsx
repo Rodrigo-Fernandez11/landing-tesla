@@ -9,6 +9,7 @@ export const ModelS: React.FC = () => {
       textColor="black"
       title="Modelo S"
       subtitle="Este es el modelo S de Tesla"
+      id="models"
     >
       <Image
         src={modelS}

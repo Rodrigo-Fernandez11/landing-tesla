@@ -9,6 +9,7 @@ export const ModelX = () => {
       textColor="black"
       title="MODEL X"
       subtitle="Este es el modelo X de Tesla"
+      id="modelx"
     >
       <Image src={modelx} alt="auto tesla x" layout="fill" objectFit="cover" />
     </LandingSection>

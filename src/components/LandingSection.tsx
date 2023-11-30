@@ -5,6 +5,7 @@ interface SectionProps {
   textColor: string;
   title: string;
   subtitle: string;
+  id: string;
   children: ReactNode;
 }
 
@@ -13,10 +14,11 @@ export const LandingSection: React.FC<SectionProps> = ({
   textColor,
   title,
   subtitle,
+  id,
   children
 }) => {
   return (
-    <section className={`bg-${color} h-screen w-screen text-center relative overflow-hidden`}>
+    <section id={id} className={`h-screen w-screen text-center relative overflow-hidden`}>
       <div className="z-30 relative h-full flex flex-col">
         <header className="pt-20">
           {/* Cambiamos pt-40 a pt-30 para reducir el espacio superior */}
@@ -38,7 +40,7 @@ export const LandingSection: React.FC<SectionProps> = ({
               Explorar inventario
             </a>
             <a
-              className={`text-${textColor} border-${color} border-2  backdrop-blur-sm text-sm rounded font-medium px-12 py-2 mx-2 inline-block transition-colors hover:bg-opacity-20 hover:bg-gray-800`}
+              className={`text-${textColor} border-${color} border-2  backdrop-blur-sm text-sm rounded font-medium px-12 py-2 mx-2 inline-block transition-colors hover:bg-opacity-20 hover:bg-gray-800 `}
               href="#"
             >
               Pedir personalizado

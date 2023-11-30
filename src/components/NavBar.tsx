@@ -1,7 +1,8 @@
 export const NavBar = () => {
   return (
-    <nav className="py-3 px-10 flex items-center fixed top-0 w-full justify-between z-40 text-white ">
-      <div className="flex flex-grow basis-0">
+    <nav className="py-3 px-6 md:px-10 flex items-center fixed top-0 w-full justify-between z-40 bg-white shadow-md">
+      <div className="flex-shrink-0">
+        {/* Logo o ícono de navegación */}
         <svg
           className="h-6 w-28"
           viewBox="0 0 342 35"
@@ -13,39 +14,27 @@ export const NavBar = () => {
           ></path>
         </svg>
       </div>
-      <div>
-        <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li>
-            <a href="#">Modelo s</a>
-          </li>
-          <li>
-            <a href="#">Modelo 3</a>
-          </li>
-          <li>
-            <a href="#">Modelo x</a>
-          </li>
-          <li>
-            <a href="#">Powerwall</a>
-          </li>
-          <li>
-            <a href="#">Carga</a>
-          </li>
+      <div className="hidden md:flex">
+        {/* Menú para tamaños de pantalla medianos y grandes */}
+        <ul className="flex space-x-4 text-sm">
+          <li><a href="#models">Modelo S</a></li>
+          <li><a href="#model3">Modelo 3</a></li>
+          <li><a href="#modelx">Modelo X</a></li>
+          <li><a href="#powerwall">Powerwall</a></li>
+          <li><a href="#accessories">Accessories</a></li>
         </ul>
       </div>
-      <div className="flex flex-grow justify-end basis-0">
-        <ul className="flex text-sm [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2">
-          <li>
-            <a href="#">Soporte</a>
-          </li>
-          <li>
-            <a href="#">Tienda</a>
-          </li>
-          <li>
-            <a href="#">Cuenta</a>
-          </li>
-          <li>
-            <a href="#">Menu</a>
-          </li>
+      <div className="flex md:hidden">
+        {/* Menú para tamaños de pantalla pequeños (móviles) */}
+        {/* Puedes implementar un menú desplegable aquí */}
+      </div>
+      <div className="hidden md:flex">
+        {/* Otro grupo de enlaces para tamaños de pantalla medianos y grandes */}
+        <ul className="flex space-x-4 text-sm">
+          <li><a href="#">Soporte</a></li>
+          <li><a href="#">Tienda</a></li>
+          <li><a href="#">Cuenta</a></li>
+          <li><a href="#">Menú</a></li>
         </ul>
       </div>
     </nav>

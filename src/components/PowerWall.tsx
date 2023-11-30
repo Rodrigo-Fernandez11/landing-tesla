@@ -9,6 +9,7 @@ export const PowerWall = () => {
       textColor="black"
       title="POWERWALL"
       subtitle="Este es el Powerwall de Tesla"
+      id="powerwall"
     >
       <Image
         src={powerWall}

@@ -9,6 +9,7 @@ export const ModelThree: React.FC = () => {
       textColor="whith"
       title="Model Three"
       subtitle="este es modelo three de tesla"
+      id="model3"
     >
       <div>
         <Image

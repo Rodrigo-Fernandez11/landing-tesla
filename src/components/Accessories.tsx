@@ -6,6 +6,7 @@ import { FooterMenu } from "./FooterMenu";
 export const Accessories = () => {
   return (
     <LandingSection
+      id="accessories"
       color="white"
       textColor="black"
       title="Accesories"
